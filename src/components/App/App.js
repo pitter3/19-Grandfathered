@@ -7,6 +7,8 @@ import './App.css';
 function App() {
   const [error, setError] = useState(null);
   const [classPics, setClassPics] = useState([]);
+  const [currentClass, setCurrentClass] = useState(null)
+  const [currentFaction, setCurrentFaction] = useState(null)
 
   const getClassPics = () => {
     fetch('http://localhost:8080/classes')
