@@ -36,7 +36,7 @@ function App() {
       {error && <div className="error-message">{error}</div>}
       <Router>
         <Routes>
-          <Route path="/" element={<div><h1>GF Your 19!</h1><HomePage classPics={classPics} /></div>} />
+          <Route path="/" element={<div><h1>GF Your 19!</h1><HomePage classPics={classPics} setCurrentClass={setCurrentClass} setCurrentFaction={setCurrentFaction} /></div>} />
         </Routes>
       </Router>
     </div>
