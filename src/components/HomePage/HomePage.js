@@ -1,13 +1,15 @@
 import "./HomePage.css"
 import ClassPic from "../ClassPic/ClassPic"
 
-function HomePage({classPics}) {
+function HomePage({classPics, setCurrentClass, setCurrentFaction}) {
   const allClasses = classPics.map((classPic) => {
     return (
-              <ClassPic
+      <ClassPic
         key={classPic.className}
         id={classPic.className}
         img={classPic.imageUrl}
+        setCurrentClass={setCurrentClass}
+        setCurrentFaction={setCurrentFaction}
       />
     )
   })
