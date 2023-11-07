@@ -13,6 +13,7 @@ function ItemPage({currentItems}) {
         questName={item.questName}
         questId={item.questId}
         requiredLevel={item.requiredLevel}
+        rarity={item.rarity}
       />
     )
   })

@@ -8,11 +8,6 @@ function FactionPic({ id, img, setCurrentFaction, currentClass, getGearByClassAn
     setCurrentFaction(id);
   };
 
-  useEffect(() => { 
-    if (currentClass && currentFaction) {
-      getGearByClassAndFaction();
-    }
-  }, [currentClass, currentFaction, getGearByClassAndFaction]);
 
   return (
     <Link to={`/gear`}>
