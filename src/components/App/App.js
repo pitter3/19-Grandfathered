@@ -11,6 +11,7 @@ function App() {
   const [factionPics, setFactionPics] = useState([])
   const [currentClass, setCurrentClass] = useState(null)
   const [currentFaction, setCurrentFaction] = useState(null)
+  const [currentItems, setCurrentItems] = useState(null)
 
   // function getGear = () => {
 
@@ -50,6 +51,26 @@ function App() {
       });
   };
 
+  const getGearByClassAndFaction = () => {
+    if (currentClass && currentFaction) {
+      const url = `http://localhost:8080/${currentClass.toLowerCase()}${currentFaction.toLowerCase()}`;
+      fetch(url)
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error('Network response was not ok');
+          }
+          return response.json();
+        })
+        .then((data) => {
+          setCurrentItems(data);
+          console.log(data);
+        })
+        .catch((error) => {
+          setError(error.message);
+        });
+    }
+  };
+
   useEffect(() => {
     getClassPics();
     getFactionPics(); // is this right?
@@ -61,7 +82,7 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<div><h1>GF Your 19!</h1><HomePage classPics={classPics} setCurrentClass={setCurrentClass} setCurrentFaction={setCurrentFaction} /></div>} />
-          <Route path="/faction" element={<FactionPage factionPics={factionPics} setCurrentFaction={setCurrentFaction} /> } />
+          <Route path="/faction" element={<FactionPage factionPics={factionPics} setCurrentFaction={setCurrentFaction} getGearByClassAndFaction={getGearByClassAndFaction} /> } />
         </Routes>
       </Router>
     </div>

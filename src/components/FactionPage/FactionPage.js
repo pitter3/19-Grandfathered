@@ -1,7 +1,7 @@
 import "./FactionPage.css"
 import FactionPic from "../FactionPic/FactionPic"
 
-function FactionPage({factionPics, setCurrentFaction}) {
+function FactionPage({factionPics, setCurrentFaction, getGearByClassAndFaction}) {
   const allFactions = factionPics.map((factionPic) => {
     return (
       <FactionPic
@@ -9,6 +9,8 @@ function FactionPage({factionPics, setCurrentFaction}) {
         id={factionPic.faction}
         img={factionPic.imageUrl}
         setCurrentFaction={setCurrentFaction}
+        getGearByClassAndFaction={getGearByClassAndFaction}
+
       />
     )
   })
