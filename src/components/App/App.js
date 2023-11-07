@@ -12,6 +12,10 @@ function App() {
   const [currentClass, setCurrentClass] = useState(null)
   const [currentFaction, setCurrentFaction] = useState(null)
 
+  // function getGear = () => {
+
+  // }
+
   const getClassPics = () => {
     fetch('http://localhost:8080/classes')
       .then((response) => {
