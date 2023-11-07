@@ -1,8 +1,8 @@
 import "./ItemPage.css"
-import Item from "../FactionPic/FactionPic"
+import Item from "../Item/Item"
 
-function ItemPage({items}) {
-  const allItems = items.map((item) => {
+function ItemPage({currentItems}) {
+  const allItems = currentItems.map((item) => {
     return (
       <Item
         key={item.itemId}

@@ -1,8 +1,9 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import ClassPic from '../ClassPic/ClassPic';
 import HomePage from '../HomePage/HomePage';
 import FactionPage from '../FactionPage/FactionPage'
+import ItemPage from '../ItemPage/ItemPage'
 import './App.css';
 
 function App() {
@@ -51,9 +52,9 @@ function App() {
       });
   };
 
-  const getGearByClassAndFaction = () => {
-    if (currentClass && currentFaction) {
-      const url = `http://localhost:8080/${currentClass.toLowerCase()}${currentFaction.toLowerCase()}`;
+  const getGear = useCallback(() => {
+    if (currentClass && !currentItems) {
+      const url = `http://localhost:8080/${currentClass}gear`;
       fetch(url)
         .then((response) => {
           if (!response.ok) {
@@ -63,18 +64,23 @@ function App() {
         })
         .then((data) => {
           setCurrentItems(data);
-          console.log(data);
         })
         .catch((error) => {
           setError(error.message);
         });
     }
-  };
+  }, [currentClass, currentItems]);
 
   useEffect(() => {
     getClassPics();
-    getFactionPics(); // is this right?
+    getFactionPics();
   }, []);
+
+  useEffect(() => {
+    if (currentClass) {
+      getGear();
+    }
+  }, [currentClass, getGear]);
 
   return (
     <div className="App">
@@ -82,7 +88,8 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<div><h1>GF Your 19!</h1><HomePage classPics={classPics} setCurrentClass={setCurrentClass} setCurrentFaction={setCurrentFaction} /></div>} />
-          <Route path="/faction" element={<FactionPage factionPics={factionPics} setCurrentFaction={setCurrentFaction} getGearByClassAndFaction={getGearByClassAndFaction} /> } />
+          <Route path="/faction" element={<FactionPage factionPics={factionPics} setCurrentFaction={setCurrentFaction} getGear={getGear} currentFaction={currentFaction} currentClass={currentClass} />}/>
+          <Route path="/gear" element={<ItemPage currentItems={currentItems}/>} />
         </Routes>
       </Router>
     </div>

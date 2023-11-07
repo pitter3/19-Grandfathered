@@ -1,12 +1,26 @@
-import React from 'react';
-import "./FactionPic.css"
+import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import "./FactionPic.css";
 
-function factionPic({ id, img, setCurrentFaction }) {
+function FactionPic({ id, img, setCurrentFaction, currentClass, getGearByClassAndFaction, currentFaction }) {
+
+  const handleFactionClick = () => {
+    setCurrentFaction(id);
+  };
+
+  useEffect(() => { 
+    if (currentClass && currentFaction) {
+      getGearByClassAndFaction();
+    }
+  }, [currentClass, currentFaction, getGearByClassAndFaction]);
+
   return (
-    <div className="faction-card" onClick={(event) => setCurrentFaction(event.target.id)}>
-      <img className="faction-image" src={img} id={id} style={{ width: '165%', height: '165%' }} alt="Faction Icon" />
-    </div>
+    <Link to={`/gear`}>
+      <div className="faction-card" onClick={handleFactionClick}>
+        <img className="faction-image" src={img} id={id} style={{ width: '165%', height: '165%' }} alt="Faction Icon" />
+      </div>
+     </Link>
   );
 }
 
-export default factionPic;
+export default FactionPic;
