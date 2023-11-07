@@ -1,6 +1,7 @@
 .item-page {
   padding: 20px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   grid-gap: 20px;

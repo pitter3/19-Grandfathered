@@ -3,7 +3,7 @@ import "./Item.css"
 
 function Item({ id, name, optional, note, questName, questId, requiredLevel}) {
   return (
-    <div className="item" onClick={(event) => console.log(event.target.id)}>
+    <div className="item" onClick={(event) => console.log(id)}>
       <p className="item-text">{name}</p>
     </div>
   );
