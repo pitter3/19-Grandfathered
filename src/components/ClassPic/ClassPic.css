@@ -1,6 +1,5 @@
 .card {
   box-sizing: border-box;
-  border: 3px solid black;
   padding: 10px;
   height: 100px;
   width: 100px;
@@ -9,4 +8,10 @@
   align-items: center;
   cursor: pointer;
 }
+
+.class-image {
+  border-radius: 100px;
+}
+
+
 
