@@ -12,27 +12,28 @@
 
 .class-image {
   border-radius: 100px;
+  transition: transform 0.3s ease;
 }
 
 a {
-max-width: 100px;
-border-radius: 100px;
+  max-width: 100px;
+  border-radius: 100px;
 }
 
 .class-image {
   border-radius: 100px;
-  transition: transform 0.3s ease; /* Add a smooth transition effect */
 }
 
-.class-image:hover {
-  animation: spin 0.7s linear; /* Apply the spin animation on hover */
+.card:hover .class-image {
+  animation: spin-and-grow 0.2s linear forwards; /* Apply the combined spin-and-grow animation on hover and keep the final state */
+  filter: brightness(1.2)
 }
 
-@keyframes spin {
+@keyframes spin-and-grow {
   0% {
-    transform: rotate(0deg);
+    transform: scale(1) rotate(0deg);
   }
   100% {
-    transform: rotate(360deg); /* Rotate the image by 360 degrees */
+    transform: scale(1.1) /* rotate(360deg);  Rotate the image by 360 degrees and scale to 110% size */
   }
 }
