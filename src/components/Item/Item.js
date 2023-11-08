@@ -1,10 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "./Item.css"
 
-function Item({ id, name, optional, note, questName, questId, requiredLevel, rarity}) {
+function Item({ id, name, optional, note, questName, questId, requiredLevel, rarity }) {
+  const [checked, setChecked] = useState(false);
+
+  const handleCheckboxChange = () => {
+    setChecked(!checked);
+  };
+
   return (
-    <div className="item" onClick={(event) => console.log(id)}>
-      <a href={`https://www.wowhead.com/wotlk/item=${id}`} class={rarity}>{name}</a>
+    <div className="item">
+      <input type="checkbox" checked={checked} onChange={handleCheckboxChange} />
+      <a href={`https://www.wowhead.com/wotlk/item=${id}`} className={rarity} style={{ textDecoration: checked ? 'line-through' : 'none' }}>{name}</a>
     </div>
   );
 }
