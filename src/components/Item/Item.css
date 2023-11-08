@@ -1,0 +1,14 @@
+.item {
+  scale: 110%;
+}
+
+input {
+  margin-right: 10px;
+  scale: 175%
+}
+
+.container {
+  width: 300px;
+  display:flex; 
+  padding-bottom: 10px;
+}

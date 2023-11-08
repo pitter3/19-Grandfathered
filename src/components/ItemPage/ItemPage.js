@@ -34,7 +34,7 @@ function ItemPage({ currentItems, currentFaction }) {
 
   return (
     <div className="item-page">
-      {allItems}
+      <div className="items-container">{allItems}</div>
     </div>
   );
 }
