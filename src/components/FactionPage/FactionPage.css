@@ -1,9 +1,18 @@
 .faction-page {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.faction-icons-container {
   padding: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
+  grid-gap: 150px;
+  max-height: 100px;
 }
+
 

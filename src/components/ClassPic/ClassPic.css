@@ -15,11 +15,6 @@
   transition: transform 0.2s ease;
 }
 
-/* a {
-  max-height: 5px;
-  border-radius: 100px;
-} */
-
 .class-image {
   border-radius: 100px;
 }
@@ -37,3 +32,4 @@
     transform: scale(1.1) /* rotate(360deg);     Rotate the image by 360 degrees and scale to 110% size */
   }
 }
+

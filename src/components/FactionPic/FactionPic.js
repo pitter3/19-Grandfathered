@@ -10,11 +10,14 @@ function FactionPic({ id, img, setCurrentFaction, currentClass, getGearByClassAn
 
 
   return (
-    <Link to={`/gear`}>
-      <div className="faction-card" onClick={handleFactionClick}>
-        <img className="faction-image" src={img} id={id} style={{ width: '165%', height: '165%' }} alt="Faction Icon" />
-      </div>
-     </Link>
+    <div>
+      <Link to={`/gear`}>
+        <div className="faction-card">
+         <img className="faction-image" src={img} id={id} style={{ width: '250%', height: '250%' }} alt="Faction Icon" onClick={handleFactionClick}/>
+        </div>
+      </Link>
+      <p className="faction-name">{id}</p>
+     </div>
   );
 }
 
