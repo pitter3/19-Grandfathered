@@ -9,7 +9,7 @@
           <img className="class-image" src={img} id={id} style={{ width: '150%', height: '150%' }} alt="Class Icon" onClick={(event) => setCurrentClass(event.target.id)} />
       </div>
     </Link>
-       <p></p></div>
+       <p>{id}</p></div>
 
     );
   }
