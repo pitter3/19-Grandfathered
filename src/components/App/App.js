@@ -56,7 +56,7 @@ function App() {
   };
 
   const getGear = useCallback(() => {
-    if (currentClass && !currentItems) {
+    if (currentClass) {
       const url = `http://localhost:8080/${currentClass}gear`;
       fetch(url)
         .then((response) => {
@@ -92,7 +92,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage classPics={classPics} setCurrentClass={setCurrentClass} setCurrentFaction={setCurrentFaction} />} />
           <Route path="/faction" element={<FactionPage factionPics={factionPics} setCurrentFaction={setCurrentFaction} getGear={getGear} currentFaction={currentFaction} currentClass={currentClass} />}/>
-          <Route path="/gear" element={<ItemPage currentItems={currentItems}/>} />
+          <Route path="/gear" element={<ItemPage currentItems={currentItems} currentFaction={currentFaction}/>} />
         </Routes>
       </Router>
     </div>
