@@ -18,7 +18,7 @@ function HomePage({classPics, setCurrentClass, setCurrentFaction}) {
 
   return (
     <div className="home-page">
-      {allClasses}
+      <div className="class-icons-container">{allClasses}</div>
     </div>
   )
 }

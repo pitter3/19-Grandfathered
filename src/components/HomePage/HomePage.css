@@ -1,10 +1,21 @@
 .home-page {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.class-icons-container {
   padding: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 50px;
-  height: 80vh;
+  max-height: 100px;
+}
+
+p {
+  text-wrap: wrap;
 }
 
