@@ -7,11 +7,32 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  border-radius: 100px;
 }
 
 .class-image {
   border-radius: 100px;
 }
 
+a {
+max-width: 100px;
+border-radius: 100px;
+}
 
+.class-image {
+  border-radius: 100px;
+  transition: transform 0.3s ease; /* Add a smooth transition effect */
+}
 
+.class-image:hover {
+  animation: spin 0.7s linear; /* Apply the spin animation on hover */
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg); /* Rotate the image by 360 degrees */
+  }
+}
