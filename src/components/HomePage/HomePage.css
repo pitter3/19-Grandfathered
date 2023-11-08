@@ -4,6 +4,7 @@
   justify-content: center;
   align-items: center;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
+  grid-gap: 50px;
+  height: 80vh;
 }
 
