@@ -13,6 +13,7 @@ function App() {
   const [currentClass, setCurrentClass] = useState(null)
   const [currentFaction, setCurrentFaction] = useState(null)
   const [currentItems, setCurrentItems] = useState(null)
+  const [allClasses, setAllClasses] = useState(null)
 
   // function getGear = () => {
 
@@ -27,6 +28,8 @@ function App() {
         return response.json();
       })
       .then((data) => {
+        const classNames = data.map((classInfo) => classInfo.className);
+        setAllClasses(classNames);
         setClassPics(data);
         console.log(data);
       })

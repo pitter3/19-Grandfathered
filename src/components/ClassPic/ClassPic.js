@@ -4,13 +4,13 @@
 
   function ClassPic({ id, img, setCurrentClass }) {
     return (
-    <Link to={`/faction`}>
-      <div className="card" >
-        
+      <div>      <Link to={`/faction`}>
+      <div className="card">
           <img className="class-image" src={img} id={id} style={{ width: '150%', height: '150%' }} alt="Class Icon" onClick={(event) => setCurrentClass(event.target.id)} />
-       
       </div>
-      </Link>
+    </Link>
+       <p></p></div>
+
     );
   }
   
