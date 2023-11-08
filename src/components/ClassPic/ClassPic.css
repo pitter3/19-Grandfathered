@@ -12,12 +12,7 @@
 
 .class-image {
   border-radius: 100px;
-  transition: transform 0.3s ease;
-}
-
-a {
-  max-height: 5px;
-  border-radius: 100px;
+  transition: transform 0.2s ease;
 }
 
 .class-image {
@@ -34,6 +29,7 @@ a {
     transform: scale(1) rotate(0deg);
   }
   100% {
-    transform: scale(1.1) /* rotate(360deg);    Rotate the image by 360 degrees and scale to 110% size */
+    transform: scale(1.1) /* rotate(360deg);     Rotate the image by 360 degrees and scale to 110% size */
   }
 }
+

@@ -21,7 +21,7 @@ function FactionPage({factionPics, setCurrentFaction, currentFaction, setCurrent
 
   return (
     <div className="faction-page">
-      {allFactions}
+      <div className="faction-icons-container">{allFactions}</div>
     </div>
   )
 }
