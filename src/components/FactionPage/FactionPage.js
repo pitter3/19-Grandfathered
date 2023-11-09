@@ -3,7 +3,7 @@ import FactionPic from "../FactionPic/FactionPic"
 import ChooseYour from "../ChooseYour/ChooseYour"
 import StatusText from "../StatusText/StatusText"
 
-function FactionPage({factionPics, setCurrentFaction, currentFaction, setCurrentItems, currentClass}) {
+function FactionPage({factionPics, setCurrentFaction, currentFaction, currentClass}) {
   const allFactions = factionPics.map((factionPic) => {
     return (
       <FactionPic
@@ -12,7 +12,6 @@ function FactionPage({factionPics, setCurrentFaction, currentFaction, setCurrent
         img={factionPic.imageUrl}
         setCurrentFaction={setCurrentFaction}
         currentFaction={currentFaction}
-        setCurrentItems={setCurrentItems}
         currentClass={currentClass}
 
       />
