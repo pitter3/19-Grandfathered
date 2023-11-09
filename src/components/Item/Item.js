@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import "./Item.css"
+import PropTypes from "prop-types";
 
 function Item({ id, name, rarity }) {
   const [checked, setChecked] = useState(false);
@@ -16,3 +17,9 @@ function Item({ id, name, rarity }) {
 }
 
 export default Item;
+
+Item.propTypes = {
+  id: PropTypes.number.isRequired, 
+  name: PropTypes.string.isRequired, 
+  rarity: PropTypes.string.isRequired, 
+};

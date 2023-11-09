@@ -2,6 +2,7 @@ import "./HomePage.css"
 import ClassPic from "../ClassPic/ClassPic"
 import ChooseYour from "../ChooseYour/ChooseYour"
 import StatusText from "../StatusText/StatusText"
+import PropTypes from 'prop-types';
 
 function HomePage({ classPics, setCurrentClass, setCurrentFaction, currentClass}) {
   const allClasses = classPics.map((classPic) => {
@@ -18,7 +19,7 @@ function HomePage({ classPics, setCurrentClass, setCurrentFaction, currentClass}
 
   return (
     <div className="home-page">
-      <StatusText classPics={classPics}/>
+      <StatusText />
       <ChooseYour currentClass={currentClass}/>
       <div className="class-icons-container">{allClasses}</div>
     </div>
@@ -26,3 +27,15 @@ function HomePage({ classPics, setCurrentClass, setCurrentFaction, currentClass}
 }
 
 export default HomePage
+
+HomePage.propTypes = {
+  classPics: PropTypes.arrayOf(
+    PropTypes.shape({
+      className: PropTypes.string.isRequired,
+      imageUrl: PropTypes.string.isRequired,
+    })
+  ).isRequired, 
+  setCurrentClass: PropTypes.func.isRequired, 
+  setCurrentFaction: PropTypes.func.isRequired, 
+  currentClass: PropTypes.string, 
+};

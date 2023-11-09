@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import "./ClassPic.css";
+import PropTypes from 'prop-types';
 
 function ClassPic({ id, img, setCurrentClass }) {
   return (
@@ -16,3 +17,9 @@ function ClassPic({ id, img, setCurrentClass }) {
 }
 
 export default ClassPic;
+
+ClassPic.propTypes = {
+  id: PropTypes.string.isRequired,
+  img: PropTypes.string.isRequired,
+  setCurrentClass: PropTypes.func.isRequired,
+};

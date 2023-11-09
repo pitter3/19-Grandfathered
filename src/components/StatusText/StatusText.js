@@ -1,6 +1,7 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
 import "./StatusText.css";
+import PropTypes from 'prop-types';
 
 function StatusText({ currentClass, currentFaction }) {
   const location = useLocation();
@@ -29,3 +30,7 @@ function StatusText({ currentClass, currentFaction }) {
 
 export default StatusText;
 
+StatusText.propTypes = {
+  currentClass: PropTypes.string,
+  currentFaction: PropTypes.string,
+};
