@@ -1,8 +1,10 @@
 import React from 'react';
 import './ItemPage.css';
 import Item from '../Item/Item';
+import StatusText from '../StatusText/StatusText';
+import ChooseYour from '../ChooseYour/ChooseYour';
 
-function ItemPage({ currentItems, currentFaction }) {
+function ItemPage({ currentItems, currentFaction, currentClass }) {
   if (currentItems === null) {
     // Redirect to the home page using href
     window.location.href = '/';
@@ -40,7 +42,7 @@ function ItemPage({ currentItems, currentFaction }) {
 
   return (
     <div className="item-page">
-      <div>hello</div>
+     <StatusText currentClass={currentClass} currentFaction={currentFaction} />
       <div className="items-container">{allItems}</div>
     </div>
   );

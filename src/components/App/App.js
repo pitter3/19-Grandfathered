@@ -4,6 +4,8 @@ import ClassPic from '../ClassPic/ClassPic';
 import HomePage from '../HomePage/HomePage';
 import FactionPage from '../FactionPage/FactionPage'
 import ItemPage from '../ItemPage/ItemPage'
+import Header from '../Header/Header';
+import StatusText from '../StatusText/StatusText';
 import './App.css';
 
 function App() {
@@ -31,7 +33,7 @@ function App() {
         const classNames = data.map((classInfo) => classInfo.className);
         setAllClasses(classNames);
         setClassPics(data);
-        console.log(data);
+        console.log("hi", data);
       })
       .catch((error) => {
         setError(error.message);
@@ -88,9 +90,10 @@ function App() {
   return (
     <div className="App">
       {error && <div className="error-message">{error}</div>}
+      <Header />
       <Router>
         <Routes>
-          <Route path="/" element={<HomePage classPics={classPics} setCurrentClass={setCurrentClass} setCurrentFaction={setCurrentFaction} currentClass={currentClass}/>} />
+          <Route path="/" element={<HomePage classPics={classPics} setCurrentClass={setCurrentClass} setCurrentFaction={setCurrentFaction} currentClass={currentClass}/> } />
           <Route path="/faction" element={<FactionPage factionPics={factionPics} setCurrentFaction={setCurrentFaction} getGear={getGear} currentFaction={currentFaction} currentClass={currentClass} />}/>
           <Route path="/gear" element={<ItemPage currentItems={currentItems} currentFaction={currentFaction} currentClass={currentClass} setCurrentItems={setCurrentItems} setCurrentClass={setCurrentClass} setCurrentFaction={setCurrentFaction}/>} />
         </Routes>
