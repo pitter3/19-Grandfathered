@@ -19,7 +19,7 @@ function HomePage({ classPics, setCurrentClass, setCurrentFaction, currentClass}
 
   return (
     <div className="home-page">
-      <StatusText classPics={classPics}/>
+      <StatusText />
       <ChooseYour currentClass={currentClass}/>
       <div className="class-icons-container">{allClasses}</div>
     </div>
