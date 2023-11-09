@@ -6,20 +6,16 @@ import ChooseYour from '../ChooseYour/ChooseYour';
 
 function ItemPage({ currentItems, currentFaction, currentClass }) {
   if (currentItems === null) {
-    // Redirect to the home page using href
     window.location.href = '/';
-    return null; // You might want to return null to prevent further rendering
+    return null;
   }
 
   let filteredItems;
 
   if (currentFaction === 'both') {
-    // If currentClass is 'both', don't filter; display all items.
     filteredItems = currentItems;
   } else {
-    // Filter items based on the selected faction.
     filteredItems = currentItems.filter((item) => {
-      // Check if the item's faction matches the selected faction or if the item's faction is 'both'.
       return item.faction === currentFaction || item.faction === 'both';
     });
   }

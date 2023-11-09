@@ -1,11 +1,9 @@
 import { useState, useEffect, useCallback } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import ClassPic from '../ClassPic/ClassPic';
 import HomePage from '../HomePage/HomePage';
 import FactionPage from '../FactionPage/FactionPage'
 import ItemPage from '../ItemPage/ItemPage'
 import Header from '../Header/Header';
-import StatusText from '../StatusText/StatusText';
 import './App.css';
 
 function App() {
@@ -16,10 +14,6 @@ function App() {
   const [currentFaction, setCurrentFaction] = useState(null)
   const [currentItems, setCurrentItems] = useState(null)
   const [allClasses, setAllClasses] = useState(null)
-
-  // function getGear = () => {
-
-  // }
 
   const getClassPics = () => {
     fetch('http://localhost:8080/classes')
@@ -33,7 +27,6 @@ function App() {
         const classNames = data.map((classInfo) => classInfo.className);
         setAllClasses(classNames);
         setClassPics(data);
-        console.log("hi", data);
       })
       .catch((error) => {
         setError(error.message);
@@ -50,7 +43,6 @@ function App() {
       })
       .then((data) => {
         setFactionPics(data);
-        console.log(data);
       })
       .catch((error) => {
         setError(error.message);
@@ -94,8 +86,8 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<HomePage classPics={classPics} setCurrentClass={setCurrentClass} setCurrentFaction={setCurrentFaction} currentClass={currentClass}/> } />
-          <Route path="/faction" element={<FactionPage factionPics={factionPics} setCurrentFaction={setCurrentFaction} getGear={getGear} currentFaction={currentFaction} currentClass={currentClass} />}/>
-          <Route path="/gear" element={<ItemPage currentItems={currentItems} currentFaction={currentFaction} currentClass={currentClass} setCurrentItems={setCurrentItems} setCurrentClass={setCurrentClass} setCurrentFaction={setCurrentFaction}/>} />
+          <Route path="/faction" element={<FactionPage factionPics={factionPics} setCurrentFaction={setCurrentFaction} currentFaction={currentFaction} currentClass={currentClass} />}/>
+          <Route path="/gear" element={<ItemPage currentItems={currentItems} currentFaction={currentFaction} currentClass={currentClass}/>} />
         </Routes>
       </Router>
     </div>
@@ -103,5 +95,3 @@ function App() {
 }
 
 export default App;
-
-// git is not working

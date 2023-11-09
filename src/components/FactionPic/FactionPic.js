@@ -2,17 +2,15 @@ import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import "./FactionPic.css";
 
-function FactionPic({ id, img, setCurrentFaction, currentClass, getGearByClassAndFaction, currentFaction }) {
+function FactionPic({ id, img, setCurrentFaction, currentClass}) {
   if (currentClass === null) {
-    // Redirect to the home page using href
     window.location.href = '/';
-    return null; // You might want to return null to prevent further rendering
+    return null; 
   }
 
   const handleFactionClick = () => {
     setCurrentFaction(id);
   };
-
 
   return (
     <div>

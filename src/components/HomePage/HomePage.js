@@ -3,7 +3,7 @@ import ClassPic from "../ClassPic/ClassPic"
 import ChooseYour from "../ChooseYour/ChooseYour"
 import StatusText from "../StatusText/StatusText"
 
-function HomePage({classPics, setCurrentClass, setCurrentFaction, currentClass}) {
+function HomePage({ classPics, setCurrentClass, setCurrentFaction, currentClass}) {
   const allClasses = classPics.map((classPic) => {
     return (
       <ClassPic
@@ -16,8 +16,6 @@ function HomePage({classPics, setCurrentClass, setCurrentFaction, currentClass})
     )
   })
 
-
-
   return (
     <div className="home-page">
       <StatusText classPics={classPics}/>
@@ -28,29 +26,3 @@ function HomePage({classPics, setCurrentClass, setCurrentFaction, currentClass})
 }
 
 export default HomePage
-
-// import "./Sightings.css"
-// import Card from "./Card"
-
-
-// function Sightings( {sightings, deleteCard} ) {
-  
-//     const allCards = sightings.map((sighting) => {
-//       return (
-//         <Card 
-//         key={sighting.id}
-//         id={sighting.id}
-//         location={sighting.location}
-//         description={sighting.description}
-//         deleteCard={deleteCard}
-//       />
-//       )
-//      })
-
-// return (
-//   <div className="sightings-container">
-//     {allCards}
-//   </div>
-// )}
-
-// export default Sightings

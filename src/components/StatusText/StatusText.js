@@ -6,7 +6,7 @@ function StatusText({ currentClass, currentFaction }) {
   const location = useLocation();
 
   if (location.pathname === '/') {
-    return null; // Don't render on the home route
+    return null;
   } else {
     const shouldDisplayBothImages = location.pathname.includes('gear'); // Display both images on 'gear' page
     const shouldDisplayClassImage = location.pathname.includes('faction'); // Display class image on 'faction' page
