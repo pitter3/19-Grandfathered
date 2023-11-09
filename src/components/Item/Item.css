@@ -1,5 +1,8 @@
 .item {
+  margin-left: 20px;
   scale: 110%;
+  margin-top: 8px;
+  margin-bottom: 5px
 }
 
 input {
@@ -10,5 +13,5 @@ input {
 .container {
   width: 300px;
   display:flex; 
-  padding-bottom: 10px;
+  padding-bottom: 5px;
 }

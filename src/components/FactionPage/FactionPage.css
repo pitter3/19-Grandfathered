@@ -1,6 +1,7 @@
 .faction-page {
   height: 80vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -13,6 +14,10 @@
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 150px;
   max-height: 100px;
+  margin-bottom: 60px;
 }
 
+p {
+  font-weight: bold;
+}
 

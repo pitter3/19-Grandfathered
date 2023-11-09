@@ -3,6 +3,12 @@ import './ItemPage.css';
 import Item from '../Item/Item';
 
 function ItemPage({ currentItems, currentFaction }) {
+  if (currentItems === null) {
+    // Redirect to the home page using href
+    window.location.href = '/';
+    return null; // You might want to return null to prevent further rendering
+  }
+
   let filteredItems;
 
   if (currentFaction === 'both') {
@@ -34,6 +40,7 @@ function ItemPage({ currentItems, currentFaction }) {
 
   return (
     <div className="item-page">
+      <div>hello</div>
       <div className="items-container">{allItems}</div>
     </div>
   );

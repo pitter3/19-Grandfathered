@@ -1,6 +1,7 @@
 .home-page {
   height: 80vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -13,9 +14,9 @@
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 50px;
   max-height: 100px;
+  margin-bottom: 60px;
 }
 
 p {
   text-wrap: wrap;
 }
-
