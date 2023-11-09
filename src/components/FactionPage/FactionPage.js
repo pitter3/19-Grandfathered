@@ -22,7 +22,7 @@ function FactionPage({factionPics, setCurrentFaction, currentFaction, currentCla
   return (
     <div className="faction-page">
       <StatusText currentClass={currentClass} currentFaction={currentFaction}/>
-      <ChooseYour currentClass={currentClass}/>
+      <ChooseYour />
       <div className="faction-icons-container">{allFactions}</div>
     </div>
   )
@@ -36,8 +36,8 @@ FactionPage.propTypes = {
       faction: PropTypes.string.isRequired,
       imageUrl: PropTypes.string.isRequired,
     })
-  ).isRequired, // factionPics is an array of objects
-  setCurrentFaction: PropTypes.func.isRequired, // setCurrentFaction is a function
-  currentFaction: PropTypes.string, // currentFaction is a string
-  currentClass: PropTypes.string, // currentClass is a string
+  ).isRequired, 
+  setCurrentFaction: PropTypes.func.isRequired, 
+  currentFaction: PropTypes.string, 
+  currentClass: PropTypes.string,
 };

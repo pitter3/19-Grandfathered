@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import "./FactionPic.css";
+import PropTypes from 'prop-types';
 
 function FactionPic({ id, img, setCurrentFaction, currentClass}) {
   if (currentClass === null) {
@@ -25,3 +26,11 @@ function FactionPic({ id, img, setCurrentFaction, currentClass}) {
 }
 
 export default FactionPic;
+
+FactionPic.propTypes = {
+  id: PropTypes.string.isRequired,
+  img: PropTypes.string.isRequired,
+  setCurrentFaction: PropTypes.func.isRequired,
+  currentClass: PropTypes.string, 
+};
+
