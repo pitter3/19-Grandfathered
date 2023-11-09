@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import "./FactionPic.css";
 
-function FactionPic({ id, img, setCurrentFaction, currentClass, getGearByClassAndFaction, currentFaction }) {
+function FactionPic({ id, img, setCurrentFaction, currentClass}) {
   if (currentClass === null) {
     window.location.href = '/';
     return null; 
