@@ -1,6 +1,7 @@
 import "./FactionPage.css"
 import FactionPic from "../FactionPic/FactionPic"
 import ChooseYour from "../ChooseYour/ChooseYour"
+import StatusText from "../StatusText/StatusText"
 
 function FactionPage({factionPics, setCurrentFaction, currentFaction, setCurrentItems, currentClass}) {
   const allFactions = factionPics.map((factionPic) => {
@@ -22,8 +23,9 @@ function FactionPage({factionPics, setCurrentFaction, currentFaction, setCurrent
 
   return (
     <div className="faction-page">
-      <div className="faction-icons-container">{allFactions}</div>
+      <StatusText currentClass={currentClass} currentFaction={currentFaction}/>
       <ChooseYour currentClass={currentClass}/>
+      <div className="faction-icons-container">{allFactions}</div>
     </div>
   )
 }

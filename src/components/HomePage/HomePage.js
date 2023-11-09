@@ -1,6 +1,7 @@
 import "./HomePage.css"
 import ClassPic from "../ClassPic/ClassPic"
 import ChooseYour from "../ChooseYour/ChooseYour"
+import StatusText from "../StatusText/StatusText"
 
 function HomePage({classPics, setCurrentClass, setCurrentFaction, currentClass}) {
   const allClasses = classPics.map((classPic) => {
@@ -19,8 +20,9 @@ function HomePage({classPics, setCurrentClass, setCurrentFaction, currentClass})
 
   return (
     <div className="home-page">
-      <div className="class-icons-container">{allClasses}</div>
+      <StatusText classPics={classPics}/>
       <ChooseYour currentClass={currentClass}/>
+      <div className="class-icons-container">{allClasses}</div>
     </div>
   )
 }

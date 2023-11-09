@@ -30,7 +30,8 @@ nav .logo {
   font-size: 24px;
   color: #fff;
   cursor: pointer;
-  min-width: 125px;
+  min-width: 119.125px;
+  max-width: 119.125px;
 }
 nav .links {
   float: right;
