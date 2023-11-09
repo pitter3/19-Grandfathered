@@ -1,7 +1,8 @@
 import "./HomePage.css"
 import ClassPic from "../ClassPic/ClassPic"
+import ChooseYour from "../ChooseYour/ChooseYour"
 
-function HomePage({classPics, setCurrentClass, setCurrentFaction}) {
+function HomePage({classPics, setCurrentClass, setCurrentFaction, currentClass}) {
   const allClasses = classPics.map((classPic) => {
     return (
       <ClassPic
@@ -19,6 +20,7 @@ function HomePage({classPics, setCurrentClass, setCurrentFaction}) {
   return (
     <div className="home-page">
       <div className="class-icons-container">{allClasses}</div>
+      <ChooseYour currentClass={currentClass}/>
     </div>
   )
 }

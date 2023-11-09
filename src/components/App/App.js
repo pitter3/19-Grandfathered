@@ -90,9 +90,9 @@ function App() {
       {error && <div className="error-message">{error}</div>}
       <Router>
         <Routes>
-          <Route path="/" element={<HomePage classPics={classPics} setCurrentClass={setCurrentClass} setCurrentFaction={setCurrentFaction} />} />
+          <Route path="/" element={<HomePage classPics={classPics} setCurrentClass={setCurrentClass} setCurrentFaction={setCurrentFaction} currentClass={currentClass}/>} />
           <Route path="/faction" element={<FactionPage factionPics={factionPics} setCurrentFaction={setCurrentFaction} getGear={getGear} currentFaction={currentFaction} currentClass={currentClass} />}/>
-          <Route path="/gear" element={<ItemPage currentItems={currentItems} currentFaction={currentFaction}/>} />
+          <Route path="/gear" element={<ItemPage currentItems={currentItems} currentFaction={currentFaction} currentClass={currentClass} setCurrentItems={setCurrentItems} setCurrentClass={setCurrentClass} setCurrentFaction={setCurrentFaction}/>} />
         </Routes>
       </Router>
     </div>

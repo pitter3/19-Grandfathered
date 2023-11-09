@@ -10,8 +10,7 @@ function Item({ id, name, optional, note, questName, questId, requiredLevel, rar
 
   return (
     <div className="item">
-      <input type="checkbox" checked={checked} onChange={handleCheckboxChange} />
-      <a href={`https://www.wowhead.com/wotlk/item=${id}`} className={rarity} style={{ textDecoration: checked ? 'line-through' : 'none' }}>{name}</a>
+      <div className="container"><input type="checkbox" checked={checked} onChange={handleCheckboxChange} /><a href={`https://www.wowhead.com/wotlk/item=${id}`} className={rarity} style={{ textDecoration: checked ? 'line-through' : 'none' }}>{name}</a></div>
     </div>
   );
 }

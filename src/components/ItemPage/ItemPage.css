@@ -1,9 +1,17 @@
 .item-page {
   padding: 20px;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   grid-gap: 20px;
 }
 
+.items-container {
+  border: 3px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background-color: #081F2F
+}
