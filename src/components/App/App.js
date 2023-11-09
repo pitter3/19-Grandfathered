@@ -4,6 +4,7 @@ import ClassPic from '../ClassPic/ClassPic';
 import HomePage from '../HomePage/HomePage';
 import FactionPage from '../FactionPage/FactionPage'
 import ItemPage from '../ItemPage/ItemPage'
+import Header from '../Header/Header';
 import './App.css';
 
 function App() {
@@ -88,6 +89,7 @@ function App() {
   return (
     <div className="App">
       {error && <div className="error-message">{error}</div>}
+      <Header />
       <Router>
         <Routes>
           <Route path="/" element={<HomePage classPics={classPics} setCurrentClass={setCurrentClass} setCurrentFaction={setCurrentFaction} currentClass={currentClass}/>} />
