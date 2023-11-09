@@ -2,7 +2,7 @@ import React from 'react';
 import './ItemPage.css';
 import Item from '../Item/Item';
 import StatusText from '../StatusText/StatusText';
-import ChooseYour from '../ChooseYour/ChooseYour';
+import PropTypes from 'prop-types';
 
 function ItemPage({ currentItems, currentFaction, currentClass }) {
   if (currentItems === null) {
@@ -45,3 +45,15 @@ function ItemPage({ currentItems, currentFaction, currentClass }) {
 }
 
 export default ItemPage;
+
+ItemPage.propTypes = {
+  currentItems: PropTypes.arrayOf(
+    PropTypes.shape({
+      itemId: PropTypes.number.isRequired,
+      name: PropTypes.string.isRequired,
+      rarity: PropTypes.string.isRequired,
+    })
+  ),
+  currentFaction: PropTypes.string,
+  currentClass: PropTypes.string,
+};
