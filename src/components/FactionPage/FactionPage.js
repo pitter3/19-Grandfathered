@@ -18,8 +18,6 @@ function FactionPage({factionPics, setCurrentFaction, currentFaction, currentCla
     )
   })
 
-
-
   return (
     <div className="faction-page">
       <StatusText currentClass={currentClass} currentFaction={currentFaction}/>

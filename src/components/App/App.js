@@ -27,7 +27,6 @@ function App() {
         const classNames = data.map((classInfo) => classInfo.className);
         setAllClasses(classNames);
         setClassPics(data);
-        console.log("hi", data);
       })
       .catch((error) => {
         setError(error.message);
@@ -44,7 +43,6 @@ function App() {
       })
       .then((data) => {
         setFactionPics(data);
-        console.log(data);
       })
       .catch((error) => {
         setError(error.message);

@@ -4,15 +4,13 @@ import "./FactionPic.css";
 
 function FactionPic({ id, img, setCurrentFaction, currentClass, getGearByClassAndFaction, currentFaction }) {
   if (currentClass === null) {
-    // Redirect to the home page using href
     window.location.href = '/';
-    return null; // You might want to return null to prevent further rendering
+    return null; 
   }
 
   const handleFactionClick = () => {
     setCurrentFaction(id);
   };
-
 
   return (
     <div>

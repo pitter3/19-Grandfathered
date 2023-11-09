@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import "./Item.css"
 
-function Item({ id, name, optional, note, questName, questId, requiredLevel, rarity }) {
+function Item({ id, name, rarity }) {
   const [checked, setChecked] = useState(false);
 
   const handleCheckboxChange = () => {
