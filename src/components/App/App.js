@@ -4,6 +4,7 @@ import HomePage from '../HomePage/HomePage';
 import FactionPage from '../FactionPage/FactionPage'
 import ItemPage from '../ItemPage/ItemPage'
 import Header from '../Header/Header';
+import AboutPage from '../AboutPage/AboutPage';
 import './App.css';
 
 function App() {
@@ -88,6 +89,7 @@ function App() {
           <Route path="/" element={<HomePage classPics={classPics} setCurrentClass={setCurrentClass} setCurrentFaction={setCurrentFaction} currentClass={currentClass}/> } />
           <Route path="/faction" element={<FactionPage factionPics={factionPics} setCurrentFaction={setCurrentFaction} currentFaction={currentFaction} currentClass={currentClass} />}/>
           <Route path="/gear" element={<ItemPage currentItems={currentItems} currentFaction={currentFaction} currentClass={currentClass}/>} />
+          <Route path="/about" element={<AboutPage />} />
         </Routes>
       </Router>
     </div>
