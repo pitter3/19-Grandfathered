@@ -5,6 +5,7 @@ import FactionPage from '../FactionPage/FactionPage'
 import ItemPage from '../ItemPage/ItemPage'
 import Header from '../Header/Header';
 import AboutPage from '../AboutPage/AboutPage';
+import NotFoundPage from '../NotFoundPage/NotFoundPage';
 import './App.css';
 
 function App() {
@@ -81,18 +82,25 @@ function App() {
   }, [currentClass, getGear]);
 
   return (
-    <div className="App">
-      {error && <div className="error-message">{error}</div>}
-      <Header />
+<div className="App">
+<Header />
+  {error ? (
+    <div className="error-message">Error: {error}</div>
+  ) : (
+    <>
       <Router>
         <Routes>
           <Route path="/" element={<HomePage classPics={classPics} setCurrentClass={setCurrentClass} setCurrentFaction={setCurrentFaction} currentClass={currentClass}/> } />
           <Route path="/faction" element={<FactionPage factionPics={factionPics} setCurrentFaction={setCurrentFaction} currentFaction={currentFaction} currentClass={currentClass} />}/>
           <Route path="/gear" element={<ItemPage currentItems={currentItems} currentFaction={currentFaction} currentClass={currentClass}/>} />
           <Route path="/about" element={<AboutPage />} />
+          <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </Router>
-    </div>
+    </>
+  )}
+</div>
+
   );
 }
 
