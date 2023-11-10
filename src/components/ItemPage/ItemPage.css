@@ -20,3 +20,15 @@
   background-color: #081F2F;
 }
 
+@media (max-width: 345px) {
+  .items-container {
+    scale: 85%
+  }
+}
+
+@media (max-width: 1323px) {
+  .items-container {
+    scale: 85%;
+    margin-top: 70px; 
+  }
+}
