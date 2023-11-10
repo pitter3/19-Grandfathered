@@ -3,6 +3,12 @@
   margin: auto; 
 }
 
+.error-message {
+  margin-top: 200px;
+  scale: 300%;
+  font-weight: bolder;
+}
+
   /* * {
     border: 1px solid green
   } */

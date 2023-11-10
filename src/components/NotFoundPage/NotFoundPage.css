@@ -1,0 +1,8 @@
+.page {
+  margin-top: 200px;
+}
+
+.home-button:hover {
+  cursor: pointer;
+  scale: 110%;
+}
