@@ -27,3 +27,8 @@ p {
 } */
 
 
+@media (max-height: 655px) {
+  .header-container {
+    padding-top: 700px;
+  }
+}

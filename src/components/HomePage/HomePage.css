@@ -19,3 +19,25 @@
 p {
   text-wrap: wrap;
 }
+
+@media (max-width: 1323px) {
+  .class-icons-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 445px) {
+  .class-icons-container {
+    transform: scale(0.8);
+  }
+}
+
+@media (max-width: 355px) {
+  .class-icons-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

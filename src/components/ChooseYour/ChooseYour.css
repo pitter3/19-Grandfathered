@@ -2,3 +2,21 @@
   height: 100px;
   padding-top: 40px;
 }
+
+@media (max-width: 1323px) {
+  .header-container {
+    padding-top: 200px;
+  }
+}
+
+@media (max-width: 355px) {
+  .header-container {
+    padding-top: 600px;
+  }
+}
+
+@media (max-height: 655px) {
+  .header-container {
+    padding-top: 700px;
+  }
+}
