@@ -1,0 +1,110 @@
+[
+  {
+    "name": "Crescent Staff",
+    "itemId": 6505,
+    "faction": "horde",
+    "rarity": "q3"
+  },
+  {
+    "name": "Seal of Sylvanas",
+    "itemId": 6414,
+    "faction": "horde",
+    "rarity": "q3"
+  },
+  {
+    "name": "Ghostly Mantle",
+    "itemId": 3324,
+    "faction": "horde",
+    "rarity": "q2"
+  },
+  {
+    "name": "Inferno Robe",
+    "itemId": 2231,
+    "faction": "horde",
+    "rarity": "q2"
+  },
+  {
+    "name": "Jutebraid Gloves",
+    "itemId": 10654,
+    "faction": "horde",
+    "rarity": "q2"
+  },
+  {
+    "name": "Sacred Burial Trousers",
+    "itemId": 6282,
+    "faction": "horde",
+    "rarity": "q2"
+  },
+  {
+    "name": "Totem of Infliction",
+    "itemId": 1131,
+    "faction": "alliance",
+    "rarity": "q2"
+  },
+  {
+    "name": "Seal of Wrynn",
+    "itemId": 2933,
+    "faction": "alliance",
+    "rarity": "q3"
+  },
+  {
+    "name": "Minor Channeling Ring",
+    "itemId": 1449,
+    "faction": "alliance",
+    "rarity": "q2"
+  },
+  {
+    "name": "Pious Legwraps",
+    "itemId": 10043,
+    "faction": "alliance",
+    "rarity": "q2"
+  },
+  {
+    "name": "Bloody Apron",
+    "itemId": 6226,
+    "faction": "both",
+    "rarity": "q3"
+  },
+  {
+    "name": "Staff of the Purifier",
+    "itemId": 5613,
+    "faction": "both",
+    "rarity": "q2"
+  },
+  {
+    "name": "Gravestone Scepter",
+    "itemId": 7001,
+    "faction": "both",
+    "rarity": "q3"
+  },
+  {
+    "name": "Black Widow Band (BoE)",
+    "itemId": 6199,
+    "faction": "both",
+    "rarity": "q2"
+  },
+  {
+    "name": "Talbar Mantle",
+    "itemId": 10657,
+    "faction": "horde",
+    "rarity": "q2"
+  },
+  {
+    "name": "Walking Boots (BoE)",
+    "itemId": 4660,
+    "faction": "both",
+    "rarity": "q2"
+  },
+  {
+    "name": "Noble's Robe (BoE)",
+    "itemId": 3019,
+    "faction": "both",
+    "rarity": "q2"
+  },
+  {
+    "name": "Everglow Lantern",
+    "itemId": 5323,
+    "faction": "both",
+    "rarity": "q2"
+  }
+]

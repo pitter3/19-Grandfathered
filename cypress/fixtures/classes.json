@@ -1,0 +1,39 @@
+[
+  {
+    "className": "Druid",
+    "imageUrl": "http://localhost:8080/ClassIcons/Icon_Druid.png"
+  },
+  {
+    "className": "Hunter",
+    "imageUrl": "http://localhost:8080/ClassIcons/Icon_Hunter.png"
+  },
+  {
+    "className": "Mage",
+    "imageUrl": "http://localhost:8080/ClassIcons/Icon_Mage.png"
+  },
+  {
+    "className": "Paladin",
+    "imageUrl": "http://localhost:8080/ClassIcons/Icon_Paladin.png"
+  },
+  {
+    "className": "Priest",
+    "imageUrl": "http://localhost:8080/ClassIcons/Icon_Priest.png"
+  },
+  {
+    "className": "Rogue",
+    "imageUrl": "http://localhost:8080/ClassIcons/Icon_Rogue.png"
+  },
+  {
+    "className": "Shaman",
+    "imageUrl": "http://localhost:8080/ClassIcons/Icon_Shaman.png"
+  },
+  {
+    "className": "Warlock",
+    "imageUrl": "http://localhost:8080/ClassIcons/Icon_Warlock.png"
+  },
+  {
+    "className": "Warrior",
+    "imageUrl": "http://localhost:8080/ClassIcons/Icon_Warrior.png"
+  }
+
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "faction": "alliance",
+    "imageUrl": "http://localhost:8080/FactionIcons/Alliance.png"
+  },
+  {
+    "faction": "both",
+    "imageUrl": "http://localhost:8080/FactionIcons/Both.png"
+  },
+  {
+    "faction": "horde",
+    "imageUrl": "http://localhost:8080/FactionIcons/Horde.png"
+  }
+]
