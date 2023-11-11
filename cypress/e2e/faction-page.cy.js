@@ -1,5 +1,17 @@
 describe('Faction Page', () => {
   beforeEach(() => {
+    cy.intercept('GET', 'http://localhost:8080/classes', {
+      fixture: 'classes',
+    }).as('getClasses');
+
+    cy.intercept('GET', 'http://localhost:8080/factions', { 
+      fixture: 'factions' 
+    }).as('getFactions');
+    
+    cy.intercept('GET', 'http://localhost:8080/Priestgear', { 
+      fixture: 'gear' 
+    }).as('getGear');
+
     cy.visit('localhost:3000');
   });
 
@@ -16,15 +28,13 @@ describe('Faction Page', () => {
     cy.get('.a-container img.classy-image').should('have.attr', 'src').and('include', 'Icon_Priest.png');
     cy.get('.faction-icons-container').find('.faction-card').should('have.length', 3);
     cy.get('.faction-icons-container')
-    .first()
-    .find('p.faction-name')
-    .should('contain', 'alliance');
-  
+      .first()
+      .find('p.faction-name')
+      .should('contain', 'alliance');
 
-  cy.get('.faction-icons-container')
-    .last()
-    .find('p.faction-name')
-    .should('contain', 'horde');
+    cy.get('.faction-icons-container')
+      .last()
+      .find('p.faction-name')
+      .should('contain', 'horde');
   });
-
 });

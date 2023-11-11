@@ -2,6 +2,7 @@ describe('404 Not Found Page', () => {
   beforeEach(() => {
     // Visit a non-existent page to trigger a 404 error
     cy.visit('localhost:3000/nonexistent-page');
+    
   });
 
   it('should display the custom 404 Not Found page with a "Go Home" button', () => {
