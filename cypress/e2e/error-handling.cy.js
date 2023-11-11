@@ -1,5 +1,16 @@
 describe('404 Not Found Page', () => {
   beforeEach(() => {
+    cy.intercept('GET', 'http://localhost:8080/classes', {
+      fixture: 'classes',
+    }).as('getClasses');
+
+    cy.intercept('GET', 'http://localhost:8080/factions', { 
+      fixture: 'factions' 
+    }).as('getFactions');
+    
+    cy.intercept('GET', 'http://localhost:8080/Priestgear', { 
+      fixture: 'gear' 
+    }).as('getGear');
     // Visit a non-existent page to trigger a 404 error
     cy.visit('localhost:3000/nonexistent-page');
     
