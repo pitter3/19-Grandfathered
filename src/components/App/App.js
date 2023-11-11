@@ -53,7 +53,11 @@ function App() {
 
   const getGear = useCallback(() => {
     if (currentClass) {
-      const url = `http://localhost:8080/${currentClass}gear`;
+      // Maintain a reference to the currentClass when the function is invoked
+      const classRef = currentClass;
+  
+      const url = `http://localhost:8080/${classRef}gear`;
+  
       fetch(url)
         .then((response) => {
           if (!response.ok) {
@@ -62,13 +66,20 @@ function App() {
           return response.json();
         })
         .then((data) => {
-          setCurrentItems(data);
+          // Only update state if the currentClass is still the same
+          if (currentClass === classRef) {
+            setCurrentItems(data);
+          }
         })
         .catch((error) => {
-          setError(error.message);
+          // Only update state if the currentClass is still the same
+          if (currentClass === classRef) {
+            setError(error.message);
+          }
         });
     }
-  }, [currentClass, currentItems]);
+  }, [currentClass, setCurrentItems, setError]);
+  
 
   useEffect(() => {
     getClassPics();
