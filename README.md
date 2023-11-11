@@ -1,70 +1,49 @@
-# Getting Started with Create React App
+# RANCID TOMATILLOS
+<div align="center">
+  
+##### Built With:
+  <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" /> <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" /> <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
+ <img src="https://shields.io/badge/react-black?logo=react&style=for-the-badge" />
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+[Deployed Link]()
 
-In the project directory, you can run:
+##### Testing Technologies:
+Fully tested e2e with Cypress!
 
-### `npm start`
+  -----
+## Abstract:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Welcome to 19Check!
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+For avid World of Warcraft Classic players, gearing up a 19-level twink character is both an art and a science. However, with the impending Cataclysm expansion, significant changes are on the horizon, and many cherished gear items are set to become unavailable or "grandfathered."
 
-### `npm test`
+The Gear Check App is your essential tool to navigate through the impending cataclysmic changes to gear availability. Specifically curated for the 19-level PvP bracket, this app provides a comprehensive overview of gear items that are at risk of being phased out or altered in Cataclysm.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Explore the app to understand which gear items are likely to be affected, categorized by class, faction, and item rarity. As Cataclysm approaches, use the Gear Check App to make informed decisions about your character's gear setup and ensure that your twink is ready to face the challenges ahead.
 
-### `npm run build`
+Gear up wisely, and may your twink characters stand strong even in the face of Cataclysmic changes!
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Preview of App:
+![rancidreadme]()
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Contributors:
+[Patrick Eitel](https://github.com/pitter3) AKA Pitter
 
-### `npm run eject`
+## Context:
+This is my mod3 Showcase project for Turing School of Software and Design, but I hope it is of use to many of my friends in the 19 bracket!
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Learning Goals:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Use the technology you’ve been working with over the course of the module to demonstrate mastery of the following:
+- React
+- Router
+- Asynchronous JavaScript
+- End to end testing with Cypress
+- Create personas and user stories to describe your target audience.
+- Work within constraints to deliver a product for your niche audience, which helps solve a problem unique to them.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
