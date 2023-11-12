@@ -18,7 +18,7 @@ function App() {
   const [allClasses, setAllClasses] = useState(null)
 
   const getClassPics = () => {
-    fetch('http://localhost:8080/classes')
+    fetch('https://one9checkserver.onrender.com/classes')
       .then((response) => {
         if (!response.ok) {
           throw new Error('Network response was not ok');
@@ -32,11 +32,12 @@ function App() {
       })
       .catch((error) => {
         setError(error.message);
-      });
+      }); 
   };
+  
 
   const getFactionPics = () => {
-    fetch('http://localhost:8080/factions')
+    fetch('https://one9checkserver.onrender.com/factions')
       .then((response) => {
         if (!response.ok) {
           throw new Error('Network response was not ok');
@@ -56,7 +57,7 @@ function App() {
       // Maintain a reference to the currentClass when the function is invoked
       const classRef = currentClass;
   
-      const url = `http://localhost:8080/${classRef}gear`;
+      const url = `https://one9checkserver.onrender.com/${classRef}gear`;
   
       fetch(url)
         .then((response) => {

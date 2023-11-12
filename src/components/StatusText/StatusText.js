@@ -16,12 +16,12 @@ function StatusText({ currentClass, currentFaction }) {
       <div className="a-container">
         {shouldDisplayBothImages && (
           <>
-            <img src={`http://localhost:8080/ClassIcons/Icon_${currentClass}.png`} alt="Class Icon" className="classy-image"/>
-            <img src={`http://localhost:8080/FactionIcons/${currentFaction}.png`} alt="Faction Icon" className="faction-image" />
+            <img src={`https://one9checkserver.onrender.com/ClassIcons/Icon_${currentClass}.png`} alt="Class Icon" className="classy-image"/>
+            <img src={`https://one9checkserver.onrender.com/FactionIcons/${currentFaction}.png`} alt="Faction Icon" className="faction-image" />
           </>
         )}
         {shouldDisplayClassImage && (
-          <img src={`http://localhost:8080/ClassIcons/Icon_${currentClass}.png`} alt="Class Icon" className="classy-image" />
+          <img src={`https://one9checkserver.onrender.com/ClassIcons/Icon_${currentClass}.png`} alt="Class Icon" className="classy-image" />
         )}
       </div>
     );

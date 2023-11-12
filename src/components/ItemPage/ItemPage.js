@@ -12,11 +12,11 @@ function ItemPage({ currentItems, currentFaction, currentClass }) {
 
   let filteredItems;
 
-  if (currentFaction === 'both') {
+  if (currentFaction === 'Both') {
     filteredItems = currentItems;
   } else {
     filteredItems = currentItems.filter((item) => {
-      return item.faction === currentFaction || item.faction === 'both';
+      return item.faction === currentFaction || item.faction === 'Both';
     });
   }
 
