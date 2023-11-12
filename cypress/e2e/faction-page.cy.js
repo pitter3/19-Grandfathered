@@ -1,14 +1,14 @@
 describe('Faction Page', () => {
   beforeEach(() => {
-    cy.intercept('GET', 'http://localhost:8080/classes', {
+    cy.intercept('GET', 'https://one9checkserver.onrender.com/classes', {
       fixture: 'classes',
     }).as('getClasses');
 
-    cy.intercept('GET', 'http://localhost:8080/factions', { 
+    cy.intercept('GET', 'https://one9checkserver.onrender.com/factions', { 
       fixture: 'factions' 
     }).as('getFactions');
     
-    cy.intercept('GET', 'http://localhost:8080/Priestgear', { 
+    cy.intercept('GET', 'https://one9checkserver.onrender.com/Priestgear', { 
       fixture: 'gear' 
     }).as('getGear');
 
