@@ -1,6 +1,6 @@
 import React from 'react';
 import './AboutPage.css';
-import check from '/Users/patrickeitel/Mod3/twink/src/check.png'
+import check from '../../check.png'
 
 function AboutPage() {
   return (
