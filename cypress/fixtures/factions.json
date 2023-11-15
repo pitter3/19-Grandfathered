@@ -1,14 +1,14 @@
 [
   {
-    "faction": "alliance",
-    "imageUrl": "http://localhost:8080/FactionIcons/Alliance.png"
+    "faction": "Alliance",
+    "imageUrl": "https://one9checkserver.onrender.com/FactionIcons/Alliance.png"
   },
   {
-    "faction": "both",
-    "imageUrl": "http://localhost:8080/FactionIcons/Both.png"
+    "faction": "Both",
+    "imageUrl": "https://one9checkserver.onrender.com/FactionIcons/Both.png"
   },
   {
-    "faction": "horde",
-    "imageUrl": "http://localhost:8080/FactionIcons/Horde.png"
+    "faction": "Horde",
+    "imageUrl": "https://one9checkserver.onrender.com/FactionIcons/Horde.png"
   }
 ]

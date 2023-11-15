@@ -11,7 +11,7 @@ describe('About Page', () => {
     cy.intercept('GET', 'https://one9checkserver.onrender.com/Priestgear', { 
       fixture: 'gear' 
     }).as('getGear');
-    cy.visit('localhost:3000');
+    cy.visit('https://19check.vercel.app/');
     // Click on the About link in the header
     cy.get('nav').find('.links > :nth-child(2) > a').click();
   });
