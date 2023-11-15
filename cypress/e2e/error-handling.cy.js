@@ -12,7 +12,7 @@ describe('404 Not Found Page', () => {
       fixture: 'gear' 
     }).as('getGear');
     // Visit a non-existent page to trigger a 404 error
-    cy.visit('localhost:3000/nonexistent-page');
+    cy.visit('https://19check.vercel.app/fakepage');
     
   });
 

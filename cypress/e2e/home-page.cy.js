@@ -10,7 +10,7 @@ describe('Home Page', () => {
   });
 
   it('should display the header with image, home, and about sections', () => {
-    cy.visit('localhost:3000');
+    cy.visit('https://19check.vercel.app/');
 
     cy.get('nav').should('exist')
       .find('.logo').should('exist');
