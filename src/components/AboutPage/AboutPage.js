@@ -31,7 +31,7 @@ function AboutPage() {
           </div>
         </div>
       </div>
-      <button
+      {/* <button
   style={{ scale: '200%', margin: '60px' }}
   data-aos="zoom-in-down"
   className="donate"
@@ -40,7 +40,7 @@ function AboutPage() {
   }}
 >
   Donate
-</button>
+</button> */}
     </section>
   );
 }
