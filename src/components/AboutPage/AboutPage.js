@@ -1,6 +1,6 @@
 import React from 'react';
 import './AboutPage.css';
-import check from '/Users/patrickeitel/Mod3/twink/src/check.png'
+import check from '../../check.png'
 
 function AboutPage() {
   return (
@@ -31,16 +31,6 @@ function AboutPage() {
           </div>
         </div>
       </div>
-      {/* <button
-  style={{ scale: '200%', margin: '60px' }}
-  data-aos="zoom-in-down"
-  className="donate"
-  onClick={() => {
-    window.open('https://www.paypal.com/paypalme/19Zone?country.x=US&locale.x=en_US', '_blank');
-  }}
->
-  Donate
-</button> */}
     </section>
   );
 }

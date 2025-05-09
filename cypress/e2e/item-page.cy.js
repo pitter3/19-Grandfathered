@@ -1,17 +1,17 @@
 describe('Item Page', () => {
   beforeEach(() => {
-    cy.intercept('GET', 'http://localhost:8080/classes', {
+    cy.intercept('GET', 'https://one9checkserver.onrender.com/classes', {
       fixture: 'classes',
     }).as('getClasses');
 
-    cy.intercept('GET', 'http://localhost:8080/factions', { 
+    cy.intercept('GET', 'https://one9checkserver.onrender.com/factions', { 
       fixture: 'factions' 
     }).as('getFactions');
     
-    cy.intercept('GET', 'http://localhost:8080/Priestgear', { 
+    cy.intercept('GET', 'https://one9checkserver.onrender.com/Priestgear', { 
       fixture: 'gear' 
     }).as('getGear');
-    cy.visit('localhost:3000');
+    cy.visit('https://19check.vercel.app/');
     // Navigate to the Item Page
     cy.get('.class-icons-container').first().click();
     cy.get('.faction-icons-container').first().click();

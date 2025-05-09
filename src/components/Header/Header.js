@@ -1,6 +1,8 @@
-import React from "react";
-import "./Header.css";
-import logo from "../../logo.png";
+
+import React from 'react';
+import './Header.css';
+import logo from '../../logo.png'
+
 
 function Header() {
   const redirectToHomePage = () => {

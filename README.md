@@ -1,12 +1,14 @@
-# RANCID TOMATILLOS
 <div align="center">
+  
+# 19Check
+
   
 ##### Built With:
   <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" /> <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" /> <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
  <img src="https://shields.io/badge/react-black?logo=react&style=for-the-badge" />
 
 
-[Deployed Link]()
+[Deployed Link](https://19check.vercel.app/)
 
 ##### Testing Technologies:
 Fully tested e2e with Cypress!
@@ -25,7 +27,8 @@ Explore the app to understand which gear items are likely to be affected, catego
 Gear up wisely, and may your twink characters stand strong even in the face of Cataclysmic changes!
 
 ## Preview of App:
-![rancidreadme]()
+![19CheckPreview](![19CheckReadMe](https://github.com/pitter3/19-Grandfathered/assets/134596035/56a995ad-c1b1-4a79-b826-800d7ef2ea59)
+
 
 
 ## Contributors:

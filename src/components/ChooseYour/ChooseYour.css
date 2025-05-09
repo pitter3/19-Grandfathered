@@ -1,7 +1,7 @@
 .header-container {
   height: 100px;
-  padding-top: 40px;
 }
+
 
 @media (max-width: 1323px) {
   .header-container {
