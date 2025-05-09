@@ -16,7 +16,7 @@ function Item({ id, name, rarity }) {
       <div className="containerx">
         <input type="checkbox" checked={checked} onChange={handleCheckboxChange} />
         <a
-          href={`https://www.wowhead.com/wotlk/item=${id}`}
+          href={`https://www.wowhead.com/classic/item=${id}`}
           className={rarity}
           style={{
             textDecoration: textDecorationStyle,

@@ -1,12 +1,12 @@
-import React from 'react';
-import './ItemPage.css';
-import Item from '../Item/Item';
-import StatusText from '../StatusText/StatusText';
-import PropTypes from 'prop-types';
+import React from "react";
+import "./ItemPage.css";
+import Item from "../Item/Item";
+import StatusText from "../StatusText/StatusText";
+import PropTypes from "prop-types";
 
 function ItemPage({ currentItems, currentFaction, currentClass }) {
   if (currentItems === null) {
-    window.location.href = '/';
+    window.location.href = "/";
     return null;
   }
 
@@ -38,7 +38,7 @@ function ItemPage({ currentItems, currentFaction, currentClass }) {
 
   return (
     <div className="item-page">
-     <StatusText currentClass={currentClass} currentFaction={currentFaction} />
+      <StatusText currentClass={currentClass} currentFaction={currentFaction} />
       <div className="items-container">{allItems}</div>
     </div>
   );
